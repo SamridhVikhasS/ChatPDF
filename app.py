@@ -15,8 +15,8 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Retrieve login credentials from Streamlit secrets
-VALID_USERNAME = st.secrets["USER_NAME"]
-VALID_PASSWORD = st.secrets["PASSWORD"]
+#VALID_USERNAME = st.secrets["USER_NAME"]
+#VALID_PASSWORD = st.secrets["PASSWORD"]
 
 def get_pdf_text(pdf_path):
     """Extracts text from a PDF document."""
@@ -92,7 +92,7 @@ def main():
     # Single Column Layout
     st.header("Chat PDF")
 
-    if 'logged_in' not in st.session_state:
+    """if 'logged_in' not in st.session_state:
         st.session_state.logged_in = False
 
     if not st.session_state.logged_in:
@@ -107,7 +107,7 @@ def main():
                 st.success("Login successful!")
             else:
                 st.error("Invalid username or password")
-        return  # Exit early to not show the main app while not logged in
+        return  # Exit early to not show the main app while not logged in"""
 
     # PDF Upload Section
     pdf_file = st.file_uploader("Upload PDF", type="pdf")
