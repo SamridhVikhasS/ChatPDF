@@ -92,22 +92,22 @@ def main():
     # Single Column Layout
     st.header("Chat PDF")
 
-    """if 'logged_in' not in st.session_state:
-        st.session_state.logged_in = False
+    #if 'logged_in' not in st.session_state:
+     #   st.session_state.logged_in = False
 
-    if not st.session_state.logged_in:
-        st.subheader("Login")
-        username = st.text_input("Username")
-        password = st.text_input("Password", type="password")
+    #if not st.session_state.logged_in:
+     #   st.subheader("Login")
+      #  username = st.text_input("Username")
+       # password = st.text_input("Password", type="password")
 
-        if st.button("Login"):
-            if username == VALID_USERNAME and password == VALID_PASSWORD:
-                st.session_state.logged_in = True
-                st.session_state.image_index = 0  # Initialize image index
-                st.success("Login successful!")
-            else:
-                st.error("Invalid username or password")
-        return  # Exit early to not show the main app while not logged in"""
+        #if st.button("Login"):
+         #   if username == VALID_USERNAME and password == VALID_PASSWORD:
+          #      st.session_state.logged_in = True
+           #     st.session_state.image_index = 0  # Initialize image index
+            #    st.success("Login successful!")
+            #else:
+             #   st.error("Invalid username or password")
+        #return  # Exit early to not show the main app while not logged in"""
 
     # PDF Upload Section
     pdf_file = st.file_uploader("Upload PDF", type="pdf")
